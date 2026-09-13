@@ -230,7 +230,7 @@ h3, h4, h5 { font-family: var(--serif); font-weight: 600; }
 /* ---------- Journey ---------- */
 .timeline {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   position: relative;
 }
@@ -251,7 +251,7 @@ h3, h4, h5 { font-family: var(--serif); font-weight: 600; }
   background: var(--bg);
   border: 2px solid var(--accent);
 }
-.timeline li:nth-child(3)::before { background: var(--accent); } /* 北上：轉折點 */
+.timeline li.turning-point::before { background: var(--accent); } /* 北上：轉折點 */
 .t-year {
   position: absolute; top: 0;
   font-size: 13px; font-weight: 600; color: var(--accent); letter-spacing: .06em;
@@ -358,7 +358,9 @@ h3, h4, h5 { font-family: var(--serif); font-weight: 600; }
 .project figcaption p:last-child { font-size: 14px; color: var(--ink-2); }
 
 /* ---------- Skills ---------- */
-.skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 48px 64px; }
+.tool-label { font-size: 13px; color: var(--ink-3); margin-top: 16px; }
+.tool-label + .chip-row { margin-top: 8px; }
 .skill-group .chip-row li { background: var(--surface); border: 1px solid var(--line); }
 .lang { margin-top: 12px; }
 .lang li {
