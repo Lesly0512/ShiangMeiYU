@@ -26,3 +26,11 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { rootMargin: '-45% 0px -50% 0px' });
 sections.forEach(s => s && observer.observe(s));
+
+// Email: stored reversed in data-e, assembled only when clicked
+document.querySelectorAll('.js-email').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    window.location.href = 'mailto:' + a.dataset.e.split('').reverse().join('');
+  });
+});
