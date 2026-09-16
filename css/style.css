@@ -405,6 +405,7 @@ h3, h4, h5 { font-family: var(--serif); font-weight: 600; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
+  .brand-en { display: none; } /* 中等寬度時讓出空間給導覽列 */
   .hero-top, .hero-bottom, .dual, .campus { grid-template-columns: 1fr; gap: 48px; }
   .skills { grid-template-columns: 1fr; }
   .hero-bottom { margin-top: 64px; }
